@@ -1,0 +1,4 @@
+<Bindings>
+  <Binding name="CLICK PetRingsCommandButton:LeftButton" category="WizPetRings"/>
+  <Binding name="CLICK PetRingsCareButton:LeftButton" category="WizPetRings"/>
+</Bindings>

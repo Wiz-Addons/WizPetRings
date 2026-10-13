@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+<title>WizPetRings WPR icon</title><desc>Original WPR monogram in a gold ring with a small paw on a dark badge.</desc>
+<defs><radialGradient id="bg" cx="48%" cy="40%" r="75%"><stop stop-color="#202936"/><stop offset="1" stop-color="#090c11"/></radialGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffdf98"/><stop offset="1" stop-color="#ad772b"/></linearGradient></defs>
+<rect x="4" y="4" width="1016" height="1016" rx="112" fill="url(#bg)"/>
+<rect x="19" y="19" width="986" height="986" rx="99" fill="none" stroke="#7e5825" stroke-width="12"/>
+<rect x="33" y="33" width="958" height="958" rx="86" fill="none" stroke="#edbf63" stroke-width="3"/>
+<circle cx="512" cy="512" r="437" fill="none" stroke="#b48a43" stroke-width="9"/>
+<circle cx="512" cy="512" r="409" fill="none" stroke="#4e3e26" stroke-width="3"/>
+<g fill="#e5b969"><ellipse cx="462" cy="233" rx="23" ry="30"/><ellipse cx="512" cy="209" rx="24" ry="31"/><ellipse cx="561" cy="233" rx="23" ry="30"/>
+<rect x="473" y="268" width="78" height="39" rx="19"/><path d="M483,280 L512,251 L541,280Z"/></g>
+<path d="M148,348 L200,348 L232,562 L273,437 L311,562 L346,348 L398,348 L336,678 L291,678 L273,608 L247,678 L201,678 Z" fill="url(#gold)" fill-rule="evenodd"/><path d="M425,348 L556,348 L607,396 L607,506 L560,557 L487,557 L487,678 L425,678 Z M487,403 L537,403 L553,420 L553,478 L534,497 L487,497 Z" fill="url(#gold)" fill-rule="evenodd"/><path d="M634,348 L774,348 L824,396 L824,507 L784,551 L864,678 L786,678 L710,557 L696,557 L696,678 L634,678 Z M696,403 L753,403 L771,421 L771,480 L753,498 L696,498 Z" fill="url(#gold)" fill-rule="evenodd"/><g stroke="#946a30" stroke-width="4"><path d="M378,744H476"/><path d="M548,744H646"/></g>
+<path d="M512,728 L528,744 L512,774 L496,744Z" fill="#e3b660"/></svg>

@@ -1,0 +1,3 @@
+local _, A = ...
+A.variantID = "classic"
+A.defaultTheme = "classic"

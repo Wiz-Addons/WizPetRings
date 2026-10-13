@@ -1,0 +1,15 @@
+## Interface: 16001
+## AllowLoadGameType: camelot
+## Title: WizPetRings
+## IconTexture: Interface\AddOns\WizPetRings\Media\Icon
+## Notes: Standalone pet command and care rings for WoW Forever.
+## Author: wizdevproj
+## Version: 1.0.0
+## SavedVariablesPerCharacter: PetRingsDB
+
+Core.lua
+Preset.lua
+Themes.lua
+Actions.lua
+Rings.lua
+Options.lua
