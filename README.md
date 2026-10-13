@@ -75,3 +75,11 @@ The settings use built-in WoW parchment and fonts. See [ATTRIBUTION.md](ATTRIBUT
 ## Repository
 
 GitHub repository: `Wiz-Addons/WizPetRings`.
+
+## Automated compatibility checks
+
+GitHub Actions runs the Lua regression checks and builds an installable ZIP on pushes, pull requests, and manual runs.
+
+The **Forever compatibility watch** checks the `forever` branch of `Gethe/wow-ui-source` daily and can also be run manually. When that source advances, it prepares a draft pull request recording the new baseline and updating TOC interface metadata if needed. The pull request lists potentially relevant API/source changes. The workflow checks the candidate before opening it and avoids duplicate reviews of the same source commit.
+
+This monitors a community mirror of Blizzard's UI source; it may lag the live patch. Mock tests cannot prove compatibility inside a new game client. Lua API changes still need review and in-game testing. The workflow never merges updates or publishes releases automatically. Repository Actions settings must allow GitHub Actions to create pull requests. Pull requests created with GITHUB_TOKEN do not automatically trigger other workflows; rerun Addon checks manually on a candidate branch after editing it.

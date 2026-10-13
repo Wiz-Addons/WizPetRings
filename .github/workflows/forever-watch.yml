@@ -1,0 +1,45 @@
+name: Forever compatibility watch
+on:
+  schedule:
+    - cron: '23 8 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: forever-compatibility-watch
+  cancel-in-progress: false
+jobs:
+  watch:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Prepare update from Forever UI source
+        run: python tools/forever_watch.py --prepare
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Check candidate addon
+        run: |
+          python tests/test_wizpetrings.py
+          python -m unittest discover -s tests -p 'test_forever_watch.py'
+          python tools/build_release.py
+      - name: Open compatibility review
+        run: python tools/forever_watch.py --publish
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: WizPetRings-compatibility-candidate
+          path: dist/WizPetRings-*.zip
+          if-no-files-found: error
