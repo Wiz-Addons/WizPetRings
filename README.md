@@ -1,5 +1,7 @@
 # WizPetRings
 
+<img src="artwork/WizPetRings-icon-512.png" alt="WizPetRings WPR icon" width="144" height="144">
+
 Pet command and care rings for **Hunters in WoW Forever**. Hold a key, flick toward an icon, and release to execute an action. Release in the centre to cancel.
 
 Maintained by **wizdevproj** under **Wiz-Addons**. WizPetRings is standalone and requires no external libraries.
