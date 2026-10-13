@@ -11,7 +11,6 @@ Maintained by **wizdevproj** under **Wiz-Addons**. WizPetRings is standalone and
 - **Pet Commands:** Attack, Follow, Passive, Defensive, Assist, Aggressive, Move To.
 - **Pet Care:** Dismiss Pet, Revive Pet, Call Pet / Call Bear, Feed Pet.
 - Separate held keys, size controls, and adjustable action order for each ring.
-- Parchment settings window with parchment panels and a sidebar page for each ring.
 - Hunter-only activation. Non-Hunters do not create rings or receive addon key overrides.
 - Settings saved per character.
 
