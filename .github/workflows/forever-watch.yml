@@ -23,6 +23,7 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
+          cache-dependency-path: requirements-dev.txt
       - run: python -m pip install -r requirements-dev.txt
       - name: Prepare update from Forever UI source
         run: python tools/forever_watch.py --prepare
